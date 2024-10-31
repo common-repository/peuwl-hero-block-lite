@@ -1,0 +1,115 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.valign {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.peuwl-hero-block-lite-inner{
+  position: relative;
+}
+
+.alignfull.peuwl-hero-block-lite img{
+  max-width: 100%;
+}
+
+.peuwl-hero-block-lite-inner-content{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px; 
+  overflow: hidden;
+  color: white;
+  &.peuwl-force-color{
+    h1,h2,h3,h4,h5,p,i,b,strong,code,div,span{
+      color: inherit !important;
+    }
+  }
+}  
+.editor-writing-flow{
+  .peuwl-hero-block-lite{
+    .peuwl-force-color{
+      h1,h2,h3,h4,h5{
+        color: inherit !important;
+      }
+      .editor-block-toolbar{
+        color: auto !important;
+      }
+    }
+  }
+}
+
+.peuwl-hero-block-lite{
+  .peuwl-force-color{
+    h1,h2,h3,h4,h5{
+      color: inherit !important;
+    }
+    .editor-block-toolbar{
+      color: auto !important;
+    }
+  }
+}
+
+.peuwl-hero-block-lite-main{
+  overflow: hidden;
+}
+
+.peuwl-hero-block-lite-overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+
+.peuwl-hero-temp-mobile{
+  display: none;
+}
+@media(max-width: 767px){
+  .peuwl-hero-temp-mobile{
+    display: block;
+  }
+  .peuwl-hero-temp-desktop{
+    display: none;
+  }
+}
+
+.peuwl-hero-fade {
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
